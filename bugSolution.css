@@ -1,0 +1,13 @@
+The following CSS code provides a more robust and cross-browser compatible solution using flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height. */
+}
+.container {
+  display: flex;
+}
+```
+
+This code uses flexbox to distribute the space evenly between the divs. The `box-sizing` property helps to avoid inconsistencies caused by padding or borders.
