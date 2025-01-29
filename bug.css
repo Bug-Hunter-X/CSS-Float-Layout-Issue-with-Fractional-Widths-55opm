@@ -1,0 +1,10 @@
+The following CSS code snippet causes an unexpected layout issue in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code intends to make two `div` elements sit side-by-side, each occupying 50% of the container's width.  However, if the container's width isn't an even multiple of the `div`'s width, the second `div` might wrap to the next line, or exhibit other unexpected behavior due to how browsers handle floating elements and fractional widths.
